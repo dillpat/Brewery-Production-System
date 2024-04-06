@@ -1,0 +1,7 @@
+{
+    "logging": {
+                    "log_file": "brewhouse.log",
+                    "log_level": "20"
+                }
+}
+
