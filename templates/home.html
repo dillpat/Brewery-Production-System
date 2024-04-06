@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <style>
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      </style>
+</head>
+<body style="background-color:#C0C0C0;">
+
+  <!-- Display company logo -->
+  <a href="/">
+    <img src="{{url_for('static', filename='logo.jpg')}}" alt="Barnasy's Brewhouse" style="width:50%;">
+  </a>
+  <br><br>
+
+  <form action="/">
+    <fieldset>
+      <legend> Main Menu: Choose Action</legend>
+      <button type="submit" class="button" name="home" value="sales_prediction" formaction="/salesprediction">Sales Predicition</button>
+      <button type="submit" class="button" name="home" value="view_brewing" formaction="/viewbrewing">View Brewing</button>
+      <button type="submit" class="button" name="home" value="hot_brew" formaction="/hotbrew">Hot Brew</button>
+      <button type="submit" class="button" name="home" value="fermentation" formaction="/fermentation">Fermentation</button>
+      <button type="submit" class="button" name="home" value="conditioning" formaction="/conditioning">Conditioning</button>
+      <button type="submit" class="button" name="home" value="bottling" formaction="/bottling">Bottling</button>
+      <button type="submit" class="button" name="home" value="beer_recommendation" formaction="/recommendation">Recommendation</button>
+  </fieldset>
+  </form> 
+</body>
+</html>

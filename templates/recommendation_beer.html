@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue">
+    <h2>Beer Brewing Recommendation</h2>
+    <form action="/recommendation" method="get">
+        <fieldset>
+            <legend>Choose month for recommendation:</legend>
+            <select name="month">
+                {% for item in months %}
+                    <option style="color:green" value="{{item}}" disabled>
+                        {{item}}
+                    </option>
+                {% endfor %}
+            </select>
+            <button type="submit">Submit</button>
+            <input type="submit" value="Back" formaction="/">
+        </fieldset>
+    </form>
+
+    <div  class=page>
+        <form action="/hotbrew" method="get">
+            <fieldset>
+                Beer recipe:<br>
+                <input type="text" name="beer" value="{{recommend}}">
+                <br><br>
+                <input type="submit" value="Recommend">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class=page>
+        <fieldset>
+            <legend>Beer Brewing Status:</legend>
+            <ol>
+                {% for item in brew_status %}
+                <li>{{item}}</li>
+                {% endfor %}
+            </ol>
+        </fieldset>
+    </div>
+</body>
+</html>

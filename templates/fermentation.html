@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>Select Recipe to Ferment</h1>
+    <form action='/fermentation'>
+       <fieldset>
+          <p>
+             <label>Select Tank</label>
+             <select id = "myList" name="tank">
+				{% for tank in tankpool %}
+					<option value = "{{tank}}">{{tank}}</option>
+				{% endfor %}
+             </select>
+          </p>
+			Batch Number:<br>
+			<input type="text" name="BatchNumber" value="99"><br>
+			<hl>Assign a Start Time</h1>
+			Start Time:<br>
+      <input type="datetime-local" name="StartTime" id="mhHeader" value="{{datetime_now}}" min="{{datetime_now}}">
+			<br>
+			Duration:<br>
+			<input type="text" name="Duration" value="4">weeks </input>
+			<button type="submit">submit</button>
+       </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>Select recipe</h1>
+    <form action='/hotbrew'>
+       <fieldset>
+          <p>
+             <label>Recipe</label>
+             <select id = "myList" name="Recipe">
+               <option value = "Pilsner" {{pilsner}}>Pilsner</option>
+               <option value = "Dunkel" {{dunkel}}>Dunkel</option>
+               <option value = "Red Helles" {{redhelles}}>Red Helles</option>
+             </select>
+          </p>
+			<hl>Assign a Batch Number</h1>
+			Batch Number:<br>
+			<input type="text" name="BatchNumber" value="99"><br>
+			<br>
+			Duration:<br>
+			<input type="text" name="Duration" value="3">hours </input>
+			<button type="submit">submit</button>
+       </fieldset>
+    </form>
+  </body>
+</html>

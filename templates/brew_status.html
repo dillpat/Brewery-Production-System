@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue">
+<div class=page>
+  <h1>View Brewing Produciton</h1>
+	<fieldset>
+		<legend>Status:</legend>
+		<ol>
+			{% for item in brew_status %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ol>
+	</fieldset>
+</div>
+</body>
+</html>
