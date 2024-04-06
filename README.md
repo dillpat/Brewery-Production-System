@@ -11,17 +11,17 @@ To run the program you need to have python 3.8
 All the files need to be in the same directory with the templates in another folder in that directory.
 Then use pip to install requirements:
 
-$ pip install csv__
-$ pip install collections__
-$ pip install io__
-$ pip install pandas__
-$ pip install datetime__
-$ pip install time__
-$ pip install json__
-$ pip install logging__
-$ pip install logging.handlers__
-$ pip install traceback__
-$ pip install flask__
+$ pip install csv <br />
+$ pip install collections <br />
+$ pip install io <br />
+$ pip install pandas <br />
+$ pip install datetime <br />
+$ pip install time <br />
+$ pip install json <br />
+$ pip install logging <br />
+$ pip install logging.handlers <br />
+$ pip install traceback <br />
+$ pip install flask <br />
 
 ### Getting Started
 
